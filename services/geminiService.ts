@@ -1,7 +1,7 @@
 import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 import { Message } from "../types";
 
-const apiKey = process.env.API_KEY || '';
+const apiKey = import.meta.env.VITE_API_KEY || '';
 
 // System instruction for the "Mine" persona
 const SYSTEM_INSTRUCTION = `
